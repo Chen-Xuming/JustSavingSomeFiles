@@ -1,0 +1,116 @@
+1. 图片：图片文件选择、上传、下载
+2. 音频：音频文件的选择、上传、下载； 录音
+3. 网络部分
+4. 适配器
+
+// 历史上的今天
+https://api.66mz8.com/api/today.php
+format=json
+
+//https://www.free-api.com/doc/391
+垃圾分类
+https://api.66mz8.com/api/garbage.php?name=纸巾
+
+//返回随机背景图片
+https://api.66mz8.com/api/bg.img.php?format=json
+
+//随机高清图
+https://api.66mz8.com/api/rand.sgimg.php?format=json
+
+//网易云音乐
+https://api.vvhan.com/api/rand.music?type=json&sort=%E7%83%AD%E6%AD%8C%E6%A6%9C
+
+
+2020/6/10  what to do
+1. test the listView
+2. write and test MediaRecord, upload and download
+
+github token：
+2d59b4ba9d12ed1ccbbe881ee72c7259bc288c55
+
+Github api： create a file --Demo
+
+url:
+https://api.github.com/repos/Chen-Xuming/JustSavingSomeFiles/contents/Test/test.txt
+
+header:
+Authorization  token 2d59b4ba9d12ed1ccbbe881ee72c7259bc288c55 (token 后面记得加空格)
+
+成功时返回状态：Status Code: 201
+
+参数格式 application/json
+{
+  "message": "test github api",
+  "committer": {
+    "name": "Chen-Xuming",
+    "email": "1136447707@qq.com"
+  },
+  "content": "bXkgbmV3IGZpbGUgY29udGVudHM="
+}
+
+content是Base64
+
+-----------------------
+response:
+------------------------
+{
+-"content": {
+"name": "test.txt",
+"path": "Test/test.txt",
+"sha": "0d5a690c8fad5e605a6e8766295d9d459d65de42",
+"size": 20,
+"url": "https://api.github.com/repos/Chen-Xuming/JustSavingSomeFiles/contents/Test/test.txt?ref=master",
+"html_url": "https://github.com/Chen-Xuming/JustSavingSomeFiles/blob/master/Test/test.txt",
+"git_url": "https://api.github.com/repos/Chen-Xuming/JustSavingSomeFiles/git/blobs/0d5a690c8fad5e605a6e8766295d9d459d65de42",
+"download_url": "https://raw.githubusercontent.com/Chen-Xuming/JustSavingSomeFiles/master/Test/test.txt",
+"type": "file",
+-"_links": {
+"self": "https://api.github.com/repos/Chen-Xuming/JustSavingSomeFiles/contents/Test/test.txt?ref=master",
+"git": "https://api.github.com/repos/Chen-Xuming/JustSavingSomeFiles/git/blobs/0d5a690c8fad5e605a6e8766295d9d459d65de42",
+"html": "https://github.com/Chen-Xuming/JustSavingSomeFiles/blob/master/Test/test.txt"
+}
+},
+-"commit": {
+"sha": "ef2392d9d4122cc68315452ef48cc287d3d772c5",
+"node_id": "MDY6Q29tbWl0MjcyMDM3NjczOmVmMjM5MmQ5ZDQxMjJjYzY4MzE1NDUyZWY0OGNjMjg3ZDNkNzcyYzU=",
+"url": "https://api.github.com/repos/Chen-Xuming/JustSavingSomeFiles/git/commits/ef2392d9d4122cc68315452ef48cc287d3d772c5",
+"html_url": "https://github.com/Chen-Xuming/JustSavingSomeFiles/commit/ef2392d9d4122cc68315452ef48cc287d3d772c5",
+-"author": {
+"name": "Chen-Xuming",
+"email": "1136447707@qq.com",
+"date": "2020-06-13T16:39:31Z"
+},
+-"committer": {
+"name": "Chen-Xuming",
+"email": "1136447707@qq.com",
+"date": "2020-06-13T16:39:31Z"
+},
+-"tree": {
+"sha": "a02da64db97fe8b9eca811aed9f498c1140dcbab",
+"url": "https://api.github.com/repos/Chen-Xuming/JustSavingSomeFiles/git/trees/a02da64db97fe8b9eca811aed9f498c1140dcbab"
+},
+"message": "test github api",
+-"parents": [
+-{
+"sha": "bcca6817608f50574fe0cd2a3c44b033f407df42",
+"url": "https://api.github.com/repos/Chen-Xuming/JustSavingSomeFiles/git/commits/bcca6817608f50574fe0cd2a3c44b033f407df42",
+"html_url": "https://github.com/Chen-Xuming/JustSavingSomeFiles/commit/bcca6817608f50574fe0cd2a3c44b033f407df42"
+}
+],
+-"verification": {
+"verified": false,
+"reason": "unsigned",
+"signature": null,
+"payload": null
+}
+}
+}
+
+
+
+
+
+
+
+
+
